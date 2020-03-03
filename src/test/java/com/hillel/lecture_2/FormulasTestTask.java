@@ -46,4 +46,10 @@ public class FormulasTestTask {
         assertEquals(formulas.calculate13Formula(x), expectedResult);
     }
 
+    public void formula14Test() {
+        double x = 30;
+        double expectedResult = 0.0;
+        assertEquals(formulas.calculate14Formula(x), expectedResult);
+    }
+
 }

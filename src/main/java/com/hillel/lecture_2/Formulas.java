@@ -41,4 +41,9 @@ public class Formulas {
 //        TODO implement formula 13
         return result;
     }
+
+    public double calculate14Formula(double x) {
+        double result = 0.0;
+        return result;
+    }
 }
