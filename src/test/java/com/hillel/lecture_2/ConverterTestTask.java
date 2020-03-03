@@ -16,7 +16,7 @@ public class ConverterTestTask {
 
     @Test
     public void celsiusToFahrenheitTest() {
-        double expectedResult = 50.0;
+            double expectedResult = 50.0;
         assertEquals(temperatureConverter.celsiusToFahrenheit(10), expectedResult);
     }
 
