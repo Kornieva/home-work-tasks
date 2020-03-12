@@ -12,7 +12,12 @@ public class LinearEquationChecker {
 
 //        TODO implements result
         int result = 0;
-
-        return result;
+        if (a==0 || b==0) {
+            result = 0;
+        }
+         else {
+             result = -b/a;
+        }
+        return result ;
     }
 }

@@ -19,6 +19,7 @@ public class CheckPassFailTest {
         int mark = 5;
 
         assertEquals(passFailChecker.checkNumber(mark), "FAIL");
+
     }
 
     @Test
@@ -26,6 +27,7 @@ public class CheckPassFailTest {
         int mark = 70;
 
         assertEquals(passFailChecker.checkNumber(mark), "PASS");
+
     }
 
     @Test
@@ -33,5 +35,7 @@ public class CheckPassFailTest {
         int mark = 50;
 
         assertEquals(passFailChecker.checkNumber(mark), "PASS");
+
     }
+
 }
