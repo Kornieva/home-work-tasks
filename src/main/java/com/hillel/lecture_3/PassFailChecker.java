@@ -1,6 +1,5 @@
 package com.hillel.lecture_3;
 
-import com.sun.prism.shader.Solid_ImagePattern_Loader;
 import io.qameta.allure.Step;
 
 /**
