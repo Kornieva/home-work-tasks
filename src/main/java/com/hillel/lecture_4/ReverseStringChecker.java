@@ -13,7 +13,11 @@ public class ReverseStringChecker {
 //        TODO implements result
         String result = "";
 
+        char[] charString = value.toCharArray();
+        for (int i = charString.length - 1; i >= 0; i--) {
+            result = result + charString[i];
+        }
         return result;
-    }
 
-}
+    }
+    }

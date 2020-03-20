@@ -13,7 +13,23 @@ public class SortingChecker {
 //        TODO implements result
         int[] result = new int[0];
 
-        return result;
+        boolean isSorted = false;
+        int buf;
+        while(!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < values.length-1; i++) {
+                if(values[i] > values[i+1]){
+                    isSorted = false;
+
+                    buf = values[i];
+                    values[i] = values[i+1];
+                    values[i+1] = buf;
+                }
+            }
+        }
+
+
+        return values;
     }
 
     @Step
@@ -21,7 +37,22 @@ public class SortingChecker {
 
 //        TODO implements result
         int[] result = new int[0];
+        boolean isSorted = false;
+        int buf;
+        while(!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < values.length-1; i++) {
+                if(values[i] < values[i+1]){
+                    isSorted = false;
 
-        return result;
+                    buf = values[i];
+                    values[i] = values[i+1];
+                    values[i+1] = buf;
+                }
+            }
+        }
+
+
+        return values;
     }
 }
