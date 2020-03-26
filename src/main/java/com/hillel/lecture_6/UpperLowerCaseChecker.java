@@ -12,7 +12,7 @@ public class UpperLowerCaseChecker {
     public String toUpperCase(String word) {
 
 //        TODO implements result
-        String result = "";
+        String result = word.toUpperCase();
 
         return result;
     }
@@ -21,7 +21,8 @@ public class UpperLowerCaseChecker {
     public String toLowerCase(String word) {
 
 //        TODO implements result
-        String result = "";
+
+        String result = word.toLowerCase();
 
         return result;
     }
@@ -31,9 +32,22 @@ public class UpperLowerCaseChecker {
 
 //        TODO implements result
         String result = "";
+        String[] sentences = sentence.split("\\. ");
+        int size = sentences.length;
 
+        for (int i = 0; i < size; i++) {
+
+            if (sentences[i].startsWith(" ")) {
+                sentences[i] = sentences[i].substring(1, 2).toUpperCase() + sentences[i].substring(2);
+            } else {
+                sentences[i] = sentences[i].substring(0, 1).toUpperCase() + sentences[i].substring(1);
+            }
+
+        }
+        result = String.join(". ", sentences);
         return result;
     }
+
 
     @Step
     public String eachLetterToUpperCase(String sentence) {
@@ -41,6 +55,14 @@ public class UpperLowerCaseChecker {
 //        TODO implements result
         String result = "";
 
+        String[] sentences = sentence.split(" ");
+        int size = sentences.length;
+
+        for (int i = 0; i < size; i++) {
+            sentences[i] = sentences[i].substring(0, 1).toUpperCase() + sentences[i].substring(1);
+        }
+        result = String.join(" ", sentences);
         return result;
     }
 }
+
