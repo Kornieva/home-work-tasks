@@ -11,13 +11,26 @@ public class ReverseStringChecker {
     public String getReversString(String value) {
 
 //        TODO implements result
-        String result = "";
+        /*String result = "";
 
         char[] charString = value.toCharArray();
         for (int i = charString.length - 1; i >= 0; i--) {
             result = result + charString[i];
         }
         return result;
+    }
+}*/
+            return reverseString(value);
+    }
 
+        public static String reverseString(String value) {
+            String result = "";
+
+            char[] charString = value.toCharArray();
+            for (int i = charString.length - 1; i >= 0; i--) {
+                result = result + charString[i];
+            }
+            return result;
+        }
     }
-    }
+
