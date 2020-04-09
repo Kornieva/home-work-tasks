@@ -15,6 +15,7 @@ public class FractionNumber {
             this.num = -this.num;
         }
     }
+
     public int getNumerator() {
         return num;
     }

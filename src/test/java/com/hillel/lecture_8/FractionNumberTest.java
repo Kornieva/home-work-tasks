@@ -23,7 +23,6 @@ public class FractionNumberTest {
         FractionNumber expectedResult = new FractionNumber(-2,5);
         FractionNumber f3 = f1.minus(f2);
 
-
         assertEquals(f3, expectedResult);
     }
 
