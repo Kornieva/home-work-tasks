@@ -27,11 +27,13 @@ public class Dubster {
 
     public static String songDecoder(String song) {
 
-        String songOld = "";
-        songOld = songOld.replaceAll("WUB", " ");
-        songOld = songOld.trim().replaceAll("[ ]+", " ");
+        String temp = "";
+        temp=song.replace("WUB"," ");
+        temp = temp.trim().replaceAll("[ ]+", " ");
 
-        return songOld;
+        return temp;
+        }
+    }
 
-    }
-    }
+
+

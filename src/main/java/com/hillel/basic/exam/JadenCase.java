@@ -15,21 +15,40 @@ package com.hillel.basic.exam;
  * <p>
  * Note that the Java version expects a return value of null for an empty string or null.
  */
+//public class JadenCase {
+//
+//    public String toJadenCase(String phrase) {
+//
+//        if (phrase == null || phrase.isEmpty()) {
+//            return null;
+//        } else {
+//            String[] sentences = phrase.split(" ");
+//            int size = sentences.length;
+//
+//            for (int i = 0; i < size; i++) {
+//                sentences[i] = sentences[i].substring(0, 1).toUpperCase() + sentences[i].substring(1);
+//            }
+//
+//            return String.join(" ", sentences);
+//        }
+//    }
+//}
+
 public class JadenCase {
 
     public String toJadenCase(String phrase) {
 
-        if (phrase == null || phrase.isEmpty()) {
-            return null;
-        } else {
+        String result = null;
+
+        if (phrase != null && !phrase.isEmpty()){
             String[] sentences = phrase.split(" ");
             int size = sentences.length;
 
             for (int i = 0; i < size; i++) {
                 sentences[i] = sentences[i].substring(0, 1).toUpperCase() + sentences[i].substring(1);
             }
-
-            return String.join(" ", sentences);
+            result =  String.join(" ", sentences);
         }
+        return result;
     }
 }
